@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#contenedor{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.principal{
+    text-align:center;
+    padding:20px 0;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    background: white;
+}
+
+h1{
+    font-size:80px;
+    font-style:italic;
+    letter-spacing:5px;
+    margin-bottom:20px;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: white;
+}
+h1:hover{
+    color: #c7c17a;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#d8a15d;
+    position:relative;
+    padding-bottom:8px;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height:3px;
+    background:#d8a15d;
+    transition:.3s;
+}
+nav a.activo::after{
+    width:100%;
+}
+.contacto{
+
+    margin-top:40px;
+    width: 75%;
+    margin: 20px auto;
+
+    padding:30px;
+
+    background:linear-gradient( to bottom,#f3e3d1, white );
+
+    
+}
+
+.contenido{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    grid-template-areas:
+    "info formulario"
+    "mapa mapa";
+
+    gap:20px;
+}
+
+.info{
+    grid-area:info;
+}
+
+.formulario{
+    grid-area:formulario;
+}
+
+.mapa{
+    grid-area:mapa;
+}
+
+.info h2,
+.formulario h2{
+
+    text-align:center;
+
+    color:#9b4c4c;
+
+    margin-bottom:15px;
+
+    font-size:18px;
+}
+
+table{
+
+    width:95%;
+    margin: auto;
+
+    border-collapse:collapse;
+
+    background:none;
+}
+
+table th,
+table td{
+
+    border:1px solid white;
+
+    padding:12px;
+
+    text-align:left;
+}
+
+table th{
+
+    width:120px;
+}
+
+.horario{
+
+    margin-top:20px;
+
+    padding:15px;
+
+    background:none;
+
+    border:1px solid white;
+}
+
+.imagen-cafe{
+
+    margin-top:15px;
+
+    text-align:center;
+}
+
+.imagen-cafe img{
+
+    width:130px;
+    height: 100px;
+    object-fit: cover;
+    border:3px solid #d6c0a8;
+}
+
+form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+}
+
+form input{
+    padding: 8px;
+    border: 1px solid #aaa;
+    height: 25px;
+}
+form textarea{
+
+    padding:8px;
+
+    border:1px solid #aaa;
+    height: 80px;
+}
+
+button{
+
+    background:#8a8a8a;
+    color:white;
+    height:28px;
+    font-size:11px;
+    font-weight:bold;
+
+}
+
+button:hover{
+
+    background:#666;
+}
+
+.mapa iframe{
+
+    width:100%;
+
+    height:260px;
+
+    border:2px solid #d6c0a8;
+}
+
+.redes{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin:25px 0;
+}
+
+.redes a{
+
+    width:45px;
+
+    height:45px;
+
+    background:black;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    transition:0.3s;
+}
+
+.redes a:hover{
+
+    background:#d8a15d;
+
+    transform:scale(1.1);
+}
